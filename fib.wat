@@ -57,6 +57,8 @@
     (get_local $n2)
   )
 
+  ;; export fib_iterative as the main thing, because it's the fastest
+
   (export "fib" (func $fib_iterative))
   (export "fib_iterative" (func $fib_iterative))
   (export "fib_recursive" (func $fib_iterative))
