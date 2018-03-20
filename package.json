@@ -1,19 +1,17 @@
 {
   "name": "fib.wasm",
   "description": "",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "homepage": "https://github.com/dominictarr/fib.wasm",
   "repository": {
     "type": "git",
     "url": "git://github.com/dominictarr/fib.wasm.git"
   },
-  "dependencies": {
-  },
-  "devDependencies": {
-  },
+  "dependencies": {},
+  "devDependencies": {},
   "scripts": {
     "test": "node test.js"
   },
   "author": "'Dominic Tarr' <dominic.tarr@gmail.com> (dominictarr.com)",
-  "license": "MIT"  
+  "license": "MIT"
 }
