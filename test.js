@@ -2,7 +2,7 @@
 var fib = require('./')
 var tape = require('tape')
 
-var fibs = [0,1,2,3,5,8,13,21]
+var fibs = [0, 1,1,2,3,5,8,13,21]
 tape('simple', function (t) {
   fibs.forEach(function (v, i) {
     var r = fib.fib(i)
@@ -12,6 +12,7 @@ tape('simple', function (t) {
 })
 
 tape('big numbers', function (t) {
-  t.equal(fib.fib(1000), 1318412525)
+  t.equal(fib.fib(20),      6765)
+  t.equal(fib.fib(40), 102334155)
   t.end()
 })

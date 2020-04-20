@@ -8,7 +8,9 @@
     "url": "git://github.com/dominictarr/fib.wasm.git"
   },
   "dependencies": {},
-  "devDependencies": {},
+  "devDependencies": {
+    "tape": "^4.13.2"
+  },
   "scripts": {
     "test": "node test.js"
   },

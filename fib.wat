@@ -9,7 +9,7 @@
     )
     (if
       (i32.eq (get_local $N) (i32.const 2))
-      (then (return (i32.const 2)))
+      (then (return (i32.const 1)))
     )
     (i32.add (call $fib_recursive
       (i32.sub (get_local $N) (i32.const 1))
@@ -25,7 +25,7 @@
     (local $tmp i32)
     (local $i i32)
     (set_local $n1 (i32.const 1))
-    (set_local $n2 (i32.const 2))
+    (set_local $n2 (i32.const 1))
     (set_local $i (i32.const 2))
 
 
@@ -37,7 +37,7 @@
 
     ;;since we normally return n2, handle n=1 case specially
     (if
-      (i32.eq (get_local $N) (i32.const 1))
+      (i32.le (get_local $N) (i32.const 2))
       (then (return (i32.const 1)))
     )
 
@@ -63,4 +63,3 @@
   (export "fib_iterative" (func $fib_iterative))
   (export "fib_recursive" (func $fib_iterative))
 )
-
